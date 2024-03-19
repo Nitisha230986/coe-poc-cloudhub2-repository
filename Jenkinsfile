@@ -17,6 +17,7 @@ agent any
             steps {
                 echo 'Testing..'
 				git 'https://github.com/Nitisha230986/coe-poc-cloudhub2-repository.git'
+		    		apiTests()
 				bat "mvn -Dmaven.test.failure.ignore=true clean test"
             }
         }
