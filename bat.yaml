@@ -1,0 +1,4 @@
+reporters:
+  - type: Local
+    file: reporter/transform.dwl
+    outFile: local.json
