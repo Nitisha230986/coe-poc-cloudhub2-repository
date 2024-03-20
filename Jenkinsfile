@@ -19,7 +19,7 @@ agent any
 				git 'https://github.com/Nitisha230986/coe-poc-cloudhub2-repository.git'
 		    		
 				bat "mvn test"
-		    		bat "reporter/transform.dwl"
+		    		bat ./reporter/transform.dwl
             }
         }
         stage('Deploy') {
