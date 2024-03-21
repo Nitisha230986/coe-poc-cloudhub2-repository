@@ -4,8 +4,10 @@ suite:
 files:
   - file: reporter/tranform.dwl
 reporters:
-    - type: JSON
-      outFile: reporter/local.json
+     - type: Email
+    options:
+      EMAILS: nitisha.nigam@coforge.com
+      DISABLED_FOR_CONFIGS: dev,qa
   # - type: SumoLogic
   #   options:
   #     SUMO_ENDPOINT: <sumo_source>
