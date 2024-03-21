@@ -3,7 +3,7 @@ suite:
 files:
   - file: reporter/transform.dwl
 reporters:
-    - type: Local
+    - type: JSON
       outFile: local.json
   # - type: SumoLogic
   #   options:
