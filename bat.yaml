@@ -3,8 +3,8 @@ suite:
 files:
   - file: reporter/transform.dwl
 reporters:
-    - type: JSON
-      outFile: /tmp/test.json
+    - type: Local
+      outFile: reporter/local.json
   # - type: SumoLogic
   #   options:
   #     SUMO_ENDPOINT: <sumo_source>
