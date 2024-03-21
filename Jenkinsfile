@@ -17,9 +17,10 @@ agent any
             steps {
                 echo 'Testing..'
 				git 'https://github.com/Nitisha230986/coe-poc-cloudhub2-repository.git'
+		   		 bat """
+   				 call './reporter/transform.dwl'
+ 				  """	
 		    		
-				bat "mvn test"
-		    		bat './reporter/transform.dwl'
             }
         }
         stage('Deploy') {
