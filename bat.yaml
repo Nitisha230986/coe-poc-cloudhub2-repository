@@ -1,4 +1,27 @@
+suite:
+  name: "Hello World Suite"
+files:
+  - file: reporter/transform.dwl
 reporters:
-  - type: Local
-    file: reporter/transform.dwl
-    outFile: reporter/local.json
+    - type: JSON
+      outFile: /tmp/test.json
+  # - type: SumoLogic
+  #   options:
+  #     SUMO_ENDPOINT: <sumo_source>
+  # - type: PagerDuty
+  #   options:
+  #     PAGER_DUTY_ROUTING_KEY: <routing_key>
+  # - type: Slack
+  #   options:
+  #     SLACK_WEBHOOK: <webhook_url>
+  # - type: Email
+  #   options:
+  #     EMAILS: <email_list>
+  # - type: NewRelic
+  #   options:
+  #     NEW_RELIC_LICENSE_KEY: <license_key>
+  # - type: JSON
+  #   outFile: /tmp/JSON.json
+  # - type: JUnit
+  #   outFile: /tmp/JUnit.xml
+----
