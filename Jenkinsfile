@@ -17,15 +17,7 @@ agent any
             steps {
                 echo 'Testing..'
 				git 'https://github.com/Nitisha230986/coe-poc-cloudhub2-repository.git'
-		   		 bat 'bat.yaml'	
-		    script{
-			    def json = readJSON file: './reporter/local.json'
-def jsonFormat = JsonOutput.toJson(json)
-prettyJSON = JsonOutput.prettyPrint(jsonFormat)
-echo "${prettyJSON}"
-		    }
-		    
-		    		
+		   		 bat 'bat.yaml'			    		
             }
         }
         stage('Deploy') {
