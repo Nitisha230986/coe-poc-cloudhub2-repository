@@ -1,10 +1,11 @@
+----
 suite:
   name: "Hello World Suite"
 files:
-  - file: reporter/transform.dwl
+  - file: reporter/tranform.dwl
 reporters:
     - type: JSON
-      outFile: reporter/local.json
+      outFile: local.json
   # - type: SumoLogic
   #   options:
   #     SUMO_ENDPOINT: <sumo_source>
