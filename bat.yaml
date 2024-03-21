@@ -4,7 +4,7 @@ files:
   - file: reporter/transform.dwl
 reporters:
     - type: Local
-      outFile: reporter/local.json
+      outFile: local.json
   # - type: SumoLogic
   #   options:
   #     SUMO_ENDPOINT: <sumo_source>
