@@ -1,6 +1,4 @@
 ----
-suite:
-  name: "Hello World Suite"
 reporters:
   - type: Local
     file: reporter/transform.dwl
