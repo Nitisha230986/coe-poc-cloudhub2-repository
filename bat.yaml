@@ -1,13 +1,10 @@
 ----
 suite:
   name: "Hello World Suite"
-files:
-  - file: reporter/tranform.dwl
 reporters:
-     - type: Email
-    options:
-      EMAILS: nitisha.nigam@coforge.com
-      DISABLED_FOR_CONFIGS: dev,qa
+  - type: Local
+    file: reporter/transform.dwl
+    outFile: local.json
   # - type: SumoLogic
   #   options:
   #     SUMO_ENDPOINT: <sumo_source>
